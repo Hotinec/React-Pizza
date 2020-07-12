@@ -1,0 +1,28 @@
+.popup {
+  width: 160px;
+  box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.09);
+  border-radius: 10px;
+
+  background-color: #fff;
+
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  letter-spacing: 0.015em;
+}
+
+.popup__item {
+  cursor: pointer;
+  padding: 12px 20px;
+
+  transition: background-color 0.1s ease-in-out;
+
+  &.active, &:hover {
+    background: rgba(254, 95, 30, 0.05);
+  }
+
+  &.active {
+    background: rgba(254, 95, 30, 0.05);
+    color: $orange;
+  }
+}

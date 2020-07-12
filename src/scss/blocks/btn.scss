@@ -1,0 +1,151 @@
+.btn {
+  cursor: pointer;
+  display: inline-block;
+  background: $orange;
+
+  font-style: normal;
+  font-weight: bold;
+  font-size: 16px;
+  text-align: center;
+
+  padding: 10px 20px;
+  border-radius: 30px;
+  border: 1px solid transparent;
+
+  transition: background-color $duration ease-in-out, 
+    border-color $duration ease-in-out;
+
+  &:hover {
+    background-color: darken($orange, 8%);
+  }
+
+  span {
+    color: #fff;
+  }
+
+  &__delimiter {
+    height: 25px;
+    width: 1px;
+    background: rgba(255, 255, 255, 0.25);
+    margin-left: 14px;
+    margin-right: 14px;
+  }
+
+  &--bucket {
+    display: flex;
+    align-items: center;
+    padding: 12px 25px;
+
+    svg {
+      margin-right: 8px;
+    }
+
+    span {
+      font-weight: 600;
+      font-size: 16px;
+    }
+  }
+
+  &--outline {
+    border: 1px solid $orange;
+    background: #fff;
+
+    span {
+      color: $orange;
+    }
+
+    svg {
+      path {
+        fill: $orange;
+      }
+    }
+
+    &:hover {
+      background-color: $orange;
+
+      &,
+      span {
+        color: #fff;
+      }
+
+      svg {
+        path {
+          fill: #fff;
+        }
+      }
+    }
+  }
+
+  &--add {
+    svg {
+      margin-right: 2px;
+    }
+
+    span {
+      font-weight: 600;
+      font-size: 16px;
+    }
+
+    &:hover {
+      i {
+        background-color: #fff;
+        color: $orange;
+      }
+    }
+
+    i {
+      display: inline-block;
+      border-radius: 30px;
+      background-color: $orange;
+      color: #fff;
+      font-weight: 600;
+      width: 22px;
+      height: 22px;
+      font-style: normal;
+      font-size: 13px;
+      line-height: 22px;
+      position: relative;
+      top: -1px;
+      left: 3px;
+    }
+  }
+
+  &--circle {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 32px;
+    height: 32px;
+    min-width: 32px;
+    padding: 0;
+    border-width: 2px;
+  }
+
+  &--remove {
+    border-color: #D0D0D0;
+    color: #D0D0D0;
+
+    &:hover {
+      background-color: darken(#D0D0D0, 8%);
+      border-color: darken(#D0D0D0, 8%);
+    }
+  }
+
+  &--back {
+    background-color: $back-color;
+    color: #fff;
+
+    &:hover {
+      background-color: darken($back-color, 8%);
+    }
+  }
+}
+
+.btn__delimiter {
+  display: inline-block;
+  height: 25px;
+  width: 1px;
+  background: rgba(255, 255, 255, 0.25);
+  margin-left: 14px;
+  margin-right: 14px;
+}

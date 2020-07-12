@@ -1,0 +1,42 @@
+.sort {
+  position: relative;
+
+  b {
+    margin-right: 5px;
+    margin-left: 5px;
+
+    font-style: normal;
+    font-weight: bold;
+    font-size: 14px;
+    letter-spacing: 0.015em;
+
+    color: #2C2C2C;
+  }
+
+  span{
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    letter-spacing: 0.015em;
+    color: $orange;
+
+    cursor: pointer;
+
+    border: none;
+    border-bottom: 1px dotted $orange;
+  }
+
+  svg {
+    transform: rotate(180deg);
+
+    &.rotate {
+      transform: rotate(0)
+    }
+  }
+}
+
+.sort__popup {
+  position: absolute;
+  right: 0;
+  margin-top: 15px;
+}

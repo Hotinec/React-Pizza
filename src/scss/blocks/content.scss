@@ -1,0 +1,29 @@
+.content {
+  margin-top: 30px;
+}
+
+.content__top {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.content__pizza {
+  margin-top: 25px;
+}
+
+.content__title {
+  font-style: normal;
+  font-weight: bold;
+  font-size: 32px;
+  letter-spacing: 0.01em;
+
+  margin-bottom: 25px;
+}
+
+.content__pizza-list {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  column-gap: 35px;
+  row-gap: 65px;
+}

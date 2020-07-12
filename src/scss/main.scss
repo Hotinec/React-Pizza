@@ -1,0 +1,20 @@
+//colors
+$wrapper-color: #ffdf8c;
+$container-width: 90%;
+$orange: #FE5F1E;
+$duration: 0.15s;
+$black: #000;
+$gray-line: #F4F4F4;
+$back-color: #282828;
+
+
+//breakpoints
+$desktops: 1230px;
+$little-desktop: 990px;
+$tablets: 770px;
+$phones: 575px;
+
+@import 'blocks/all';
+@import 'layout/base.scss';
+@import 'layout/mixins.scss';
+@import "fonts";
