@@ -1,4 +1,4 @@
-import React, { useState } from "react"
+import React, { useState } from 'react'
 import PropTypes from 'prop-types'
 import classNames from 'classnames'
 
@@ -80,15 +80,15 @@ PizzaBlock.propTypes = {
   name: PropTypes.string,
   imageUrl: PropTypes.string,
   price: PropTypes.number,
-  types: PropTypes.arrayOf([PropTypes.string]),
-  sizes: PropTypes.arrayOf([PropTypes.number])
+  types: PropTypes.arrayOf(PropTypes.number),
+  sizes: PropTypes.arrayOf(PropTypes.number),
 }
 
 PizzaBlock.defaultProps = {
   name: '---',
   price: 0,
   types: [],
-  sizes: []
+  sizes: [],
 }
 
 export default PizzaBlock;
